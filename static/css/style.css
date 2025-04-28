@@ -1,0 +1,65 @@
+/* Основные цвета как в Fairy Flourish */
+:root {
+    --primary: #ff85a2;  /* Нежно-розовый */
+    --secondary: #f8d7da; /* Светло-розовый */
+    --dark: #333;
+}
+
+/* Глобальные стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+    background-color: #fff9fb;
+}
+
+/* Шапка */
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    color: var(--dark) !important;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+/* Главная страница */
+.hero {
+    background: linear-gradient(135deg, var(--secondary), white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+/* Кнопки */
+.btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        margin-top: 15px;
+    }
+}

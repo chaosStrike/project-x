@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Каталог тортов{% endblock %}
+
+{% block content %}
+<section class="container my-5">
+    <h1 class="text-center mb-4">Наши торты</h1>
+    <div class="row">
+        {% for product in products %}
+            {% include 'includes/product_card.html' %}
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
